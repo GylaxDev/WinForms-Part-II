@@ -28,23 +28,23 @@ namespace PraktikumWinForms
         /// </summary>
         private void InitializeComponent()
         {
-            PanelUtama = new Panel();
+            panelUtama = new Panel();
             SuspendLayout();
             // 
-            // PanelUtama
+            // panelUtama
             // 
-            PanelUtama.Dock = DockStyle.Fill;
-            PanelUtama.Location = new Point(0, 0);
-            PanelUtama.Name = "PanelUtama";
-            PanelUtama.Size = new Size(800, 450);
-            PanelUtama.TabIndex = 0;
+            panelUtama.Dock = DockStyle.Fill;
+            panelUtama.Location = new Point(0, 0);
+            panelUtama.Name = "panelUtama";
+            panelUtama.Size = new Size(800, 450);
+            panelUtama.TabIndex = 0;
             // 
             // FormUtama
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(PanelUtama);
+            Controls.Add(panelUtama);
             Name = "FormUtama";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormUtama";
@@ -53,6 +53,6 @@ namespace PraktikumWinForms
 
         #endregion
 
-        private Panel PanelUtama;
+        private Panel panelUtama;
     }
 }

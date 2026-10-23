@@ -1,4 +1,4 @@
-namespace PraktikumWinforms
+namespace PraktikumWinForms
 {
     partial class FormCRUD
     {

@@ -26,10 +26,10 @@ namespace PraktikumWinForms
         // Fungsi ajaib untuk mengganti isi panel
         public void BukaFormDiPanel(Form formAnak)
         {
-            if (this.PanelUtama.Controls.Count > 0)
+            if (this.panelUtama.Controls.Count > 0)
             {
-                this.PanelUtama.Controls[0].Dispose(); // Bersihkan form sebelumnya
-                this.PanelUtama.Controls.Clear();
+                this.panelUtama.Controls[0].Dispose(); // Bersihkan form sebelumnya
+                this.panelUtama.Controls.Clear();
             }
 
 
@@ -37,8 +37,8 @@ namespace PraktikumWinForms
             formAnak.FormBorderStyle = FormBorderStyle.None;
             formAnak.Dock = DockStyle.Fill;
 
-            this.PanelUtama.Controls.Add(formAnak);
-            this.PanelUtama.Tag = formAnak;
+            this.panelUtama.Controls.Add(formAnak);
+            this.panelUtama.Tag = formAnak;
             formAnak.Show();
         }
     }

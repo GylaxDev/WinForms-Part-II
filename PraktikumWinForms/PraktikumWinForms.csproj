@@ -25,7 +25,7 @@
 
   <ItemGroup>
     <EmbeddedResource Update="FormCRUD.resx">
-      <LogicalName>PraktikumWinforms.FormCRUD.resources</LogicalName>
+      <LogicalName>PraktikumWinForms.FormCRUD.resources</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
 
