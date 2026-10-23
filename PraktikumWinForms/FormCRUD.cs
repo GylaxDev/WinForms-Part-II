@@ -1,20 +1,18 @@
+using PraktikumWinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PraktikumWinForms
+namespace PraktikumWinforms
 {
     public partial class FormCRUD : Form
     {
         private DatabaseHelper db;
         private User? _user; // null jika mode tambah
-
 
         public FormCRUD(User? user)
         {
@@ -30,7 +28,6 @@ namespace PraktikumWinForms
 
             }
         }
-
 
         private void btnSimpan_Click(object sender, EventArgs e)
         {
