@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace PraktikumWinForms
 {
-    public partial class Form3 : Form
+    public partial class FormCRUD : Form
     {
         private DatabaseHelper db;
         private User? _user; // null jika mode tambah
 
 
-        public Form3(User? user)
+        public FormCRUD(User? user)
         {
             InitializeComponent();
             _user = user;

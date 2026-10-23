@@ -1,6 +1,6 @@
 namespace PraktikumWinForms
 {
-    partial class Form3
+    partial class FormCRUD
     {
         /// <summary>
         /// Required designer variable.
@@ -97,7 +97,7 @@ namespace PraktikumWinForms
 
 
             //
-            // Form3
+            // FormCRUD
             //
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -110,7 +110,7 @@ namespace PraktikumWinForms
             Controls.Add(txtAsal);
             Controls.Add(btnSimpan);
             Controls.Add(btnBatal);
-            Name = "Form3";
+            Name = "FormCRUD";
             Text = "Form Tambah / Edit User";
             //Load += Form3_Load;
             StartPosition = FormStartPosition.CenterParent;

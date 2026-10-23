@@ -33,7 +33,7 @@ namespace PraktikumWinForms
 
         private void btnTambah_Click(object sender, EventArgs e)
         {
-            Form3 formTambah = new Form3(null); // null = mode tambah
+            FormCRUD formTambah = new FormCRUD(null); // null = mode tambah
             formTambah.ShowDialog();
             this.loadData(); // refresh tabel setelah tutup
         }
@@ -46,7 +46,7 @@ namespace PraktikumWinForms
 
 
             User selected = (User)DgUser.CurrentRow.DataBoundItem;
-            Form3 formEdit = new Form3(selected); // kirim data = mode edit
+            FormCRUD formEdit = new FormCRUD(selected); // kirim data = mode edit
             formEdit.ShowDialog();
             loadData();
         }

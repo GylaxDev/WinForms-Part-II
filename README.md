@@ -9,7 +9,7 @@ form login, dashboard, dan form utama berbasis panel.
 | --- | --- |
 | `PraktikumWinForms/DatabaseHelper.cs` | Koneksi Npgsql + operasi CRUD |
 | `PraktikumWinForms/User.cs` | Model/entity user (`id`, `nama`, `umur`, `asal`) |
-| `PraktikumWinForms/Form3.cs` | Form tambah/edit user |
+| `PraktikumWinForms/FormCRUD.cs` | Form tambah/edit user |
 | `PraktikumWinForms/FormDashboard.cs` | Tabel user + tombol Tambah/Edit/Hapus |
 | `PraktikumWinForms/FormUtama.cs` | Form induk dengan `PanelUtama` |
 | `PraktikumWinForms/LoginForm.cs` | Login, lalu membuka dashboard di panel |
