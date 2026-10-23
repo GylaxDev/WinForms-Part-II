@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             panel1 = new Panel();
             BtnLogin = new Button();
             TbPassword = new TextBox();
@@ -49,20 +50,22 @@
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(253, 22);
+            panel1.Location = new Point(289, 29);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(300, 400);
+            panel1.Size = new Size(343, 533);
             panel1.TabIndex = 0;
             // 
             // BtnLogin
             // 
-            BtnLogin.BackColor = Color.DeepSkyBlue;
+            BtnLogin.BackColor = SystemColors.Desktop;
             BtnLogin.FlatStyle = FlatStyle.Flat;
             BtnLogin.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             BtnLogin.ForeColor = Color.White;
-            BtnLogin.Location = new Point(92, 308);
+            BtnLogin.Location = new Point(105, 411);
+            BtnLogin.Margin = new Padding(3, 4, 3, 4);
             BtnLogin.Name = "BtnLogin";
-            BtnLogin.Size = new Size(98, 30);
+            BtnLogin.Size = new Size(112, 40);
             BtnLogin.TabIndex = 6;
             BtnLogin.Text = "Login";
             BtnLogin.UseVisualStyleBackColor = false;
@@ -73,9 +76,10 @@
             TbPassword.BackColor = SystemColors.Window;
             TbPassword.BorderStyle = BorderStyle.None;
             TbPassword.Cursor = Cursors.IBeam;
-            TbPassword.Location = new Point(22, 268);
+            TbPassword.Location = new Point(25, 357);
+            TbPassword.Margin = new Padding(3, 4, 3, 4);
             TbPassword.Name = "TbPassword";
-            TbPassword.Size = new Size(254, 16);
+            TbPassword.Size = new Size(290, 20);
             TbPassword.TabIndex = 5;
             TbPassword.UseSystemPasswordChar = true;
             // 
@@ -84,26 +88,27 @@
             TbUsername.BackColor = SystemColors.Window;
             TbUsername.BorderStyle = BorderStyle.None;
             TbUsername.Cursor = Cursors.IBeam;
-            TbUsername.Location = new Point(22, 210);
+            TbUsername.Location = new Point(25, 280);
+            TbUsername.Margin = new Padding(3, 4, 3, 4);
             TbUsername.Name = "TbUsername";
-            TbUsername.Size = new Size(254, 16);
+            TbUsername.Size = new Size(290, 20);
             TbUsername.TabIndex = 4;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(22, 250);
+            label3.Location = new Point(25, 333);
             label3.Name = "label3";
-            label3.Size = new Size(57, 15);
+            label3.Size = new Size(70, 20);
             label3.TabIndex = 3;
             label3.Text = "Password";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(22, 192);
+            label2.Location = new Point(25, 256);
             label2.Name = "label2";
-            label2.Size = new Size(60, 15);
+            label2.Size = new Size(75, 20);
             label2.TabIndex = 2;
             label2.Text = "Username";
             // 
@@ -111,30 +116,33 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(101, 149);
+            label1.Location = new Point(115, 199);
             label1.Name = "label1";
-            label1.Size = new Size(78, 30);
+            label1.Size = new Size(99, 37);
             label1.TabIndex = 1;
             label1.Text = "LOGIN";
             // 
             // pictureBox1
             // 
-            pictureBox1.BackgroundImage = Properties.Resources.Link_QR;
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(81, 19);
+            pictureBox1.Location = new Point(93, 25);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(120, 116);
+            pictureBox1.Size = new Size(137, 155);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // LoginForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.bdf1403ebbabe6a1f171ed67c5b91503;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(panel1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "LoginForm";
             Text = "Form1";
             panel1.ResumeLayout(false);
